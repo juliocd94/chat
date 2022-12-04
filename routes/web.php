@@ -18,5 +18,5 @@ Route::middleware([
 ])->group(function () {
     Route::get('/search', [HomeController::class, 'index'])->name('dashboard.index');
     Route::get('/chat/{id}/', [HomeController::class, 'chat'])->name('chat');
-    Route::get('create-mensaje/{id}/{message}/', [HomeController::class, 'createMensaje'])->name('create-mensaje');
+    Route::get('create-mensaje/{id}/', [HomeController::class, 'createMensaje'])->name('create-mensaje');
 });
